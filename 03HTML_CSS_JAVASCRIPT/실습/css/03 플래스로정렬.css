@@ -1,0 +1,51 @@
+* {
+    background-color: aliceblue
+}
+
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:  100vh;
+    margin: 0;
+}
+
+div h3 {
+    background-color: white;
+    text-align: center;
+}
+div .buttons2{
+    background-color: white;
+}
+
+#button {
+    background-color: white;
+    border: 1px solid gray;
+    width: 400px;
+    height: 130px;
+    border-radius: 10px;
+    gap: 15px;
+    margin: 0;
+    text-align: center;
+}
+
+#button button {
+    display: flex inline;
+    width: 70px;
+    height: 40px;
+    border-radius: 30px;
+    color: white;
+    border: 0px;
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+}
+
+#button #ok {
+    background-color: rgb(21, 216, 21);
+}
+
+#button #cl {
+    background-color: rgb(248, 73, 73);
+}
