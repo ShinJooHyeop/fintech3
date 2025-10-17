@@ -16,12 +16,11 @@ def text_clean(text):
 
 
 def naver_api(keyword):
-    print(keyword)
     page_num = 1
     total_page = 1
     start_num = 1
     
-    all_data = []
+    result = []
     while page_num <= total_page:
         print(page_num,total_page, end="\r")
         user_id = os.getenv("Id")
@@ -32,7 +31,7 @@ def naver_api(keyword):
         r = requests.get(url,params=payload, headers=headers)
         response = r.json()
 
-        result = []
+
         for item in response['items']:
             result.append(dict(title=['title'], desc=text_clean(item['description']),link=['link'])
             )
