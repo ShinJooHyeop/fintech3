@@ -12,3 +12,10 @@ dist
 *.tsv
 .tnv
 *.tnv
+*.txt
+*.joblib
+*.pkl
+autogluon*
+autogluon_salary_model/
+catboost*
+__pycache__
