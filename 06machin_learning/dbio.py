@@ -11,7 +11,7 @@ print(os.getenv("id"))
 
 db_id = os.getenv("id")
 db_pw = os.getenv("pw")
-addr = os.getenv("addr")
+addr = os.getenv("windows_ip")
 port = os.getenv("port")
 
 
