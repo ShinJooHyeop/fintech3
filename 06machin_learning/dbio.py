@@ -35,5 +35,5 @@ def to_db(dbname,table_name,df):
     conn = db_connect(dbname)
     df.to_sql(table_name, con=conn, index=False, if_exists="append")
     conn.close()
-    return
+    return print(f"{dbname}.{table_name} 데이터저장완료")
 
