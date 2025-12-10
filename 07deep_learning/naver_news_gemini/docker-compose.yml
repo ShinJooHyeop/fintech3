@@ -1,0 +1,13 @@
+services:
+  naver-news-service:
+    build: .
+    container_name: naver-news-gemini
+    ports:
+      - "7860:7860"
+    environment:
+      user_id: "${user_id}"
+      user_secret: "${user_secret}"
+      GEMINI_API_KEY: "${GEMINI_API_KEY}"
+    volumes:
+      - ./:/app
+    restart: always
